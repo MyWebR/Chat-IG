@@ -12,8 +12,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px;
   padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* Optional: to make sure it's visible on top of other content */
+  z-index: 999; /* Optional: to ensure it's above other elements */
+  border-bottom: none; /* default no border */
+  transition: border-bottom 0.3s; /* smooth transition */
 }
 
 .account,
@@ -59,6 +66,7 @@ header {
 
 /* satatus */
 .status {
+  height: 160px;
   display: flex; /* Membuat elemen-elemen berjejer ke samping */
   overflow-x: auto; /* Membuat scroll horizontal jika lebih dari halaman */
   white-space: nowrap; /* Mencegah pemisahan baris */
@@ -67,11 +75,11 @@ header {
 }
 
 .titik-1 {
-  margin-top: -75px;
+  margin-top: -73px;
   margin-bottom: 75px;
   height: 4px;
   width: 4px;
-  margin-left: 27px;
+  margin-left: 24px;
   border-radius: 50%;
   background-color: white;
   position: relative; /* Menjadikan posisi relatif agar z-index berfungsi */
@@ -83,7 +91,7 @@ header {
   margin-bottom: 75px;
   height: 10px;
   width: 13px;
-  margin-left: 20px;
+  margin-left: 15px;
   border-radius: 50%;
   background-color: white;
   position: relative; /* Menjadikan posisi relatif agar z-index berfungsi */
@@ -96,7 +104,7 @@ header {
   display: flex;
   margin: 3px;
   padding: 2px;
-  margin-top: -90px;
+  margin-top: -100px;
   margin-bottom: 75px;
   height: 20px;
   width: auto;
@@ -119,10 +127,163 @@ header {
 }
 
 .status-1 img {
+  margin-top: 20px;
   height: 80px;
   border-radius: 50%;
 }
 
 .status-1 p {
   font-size: 13px;
+}
+
+/* pesan/[permintaan */
+.pilihan-pesan {
+  font-size: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+#pesan-permintaan {
+  font-weight: bold;
+}
+
+#permintaan-pesan {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0ea5e9;
+}
+
+/* pesan */
+.pesan {
+  margin: 15px;
+}
+
+.pesan-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.profil img {
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.camera img {
+  height: 25px;
+  width: auto;
+  opacity: 70%;
+}
+
+.profil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.keterangan {
+  margin-left: 15px;
+}
+
+.keterangan p {
+  margin: 0;
+}
+
+.keterangan #username {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.keterangan #dilihat {
+  font-size: 11px;
+  color: #475569;
+}
+
+/* title followers */
+.title-followers {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+#left {
+  font-weight: bold;
+}
+
+#right {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0ea5e9;
+}
+
+/* followers */
+.followers {
+  margin: 15px;
+}
+
+.users-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.profil-followers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profil-followers img {
+  height: 60px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.name-followers {
+  margin-left: 15px;
+}
+
+.name-followers p {
+  margin: 0;
+}
+
+.name-followers #name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.name-followers #panggilan {
+  font-size: 11px;
+  color: #475569;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action button {
+  border: none;
+  background-color: #0ea5e9;
+  padding: 5px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.action img {
+  height: 20px;
+  width: auto;
+  opacity: 70%;
 }
